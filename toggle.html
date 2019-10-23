@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Jquery</title>
+</head>
+<body>
+<div class="container" style="height: auto">
+    <div id="fix">
+        <header class="row">
+            <div class="shopping-mall">
+                <h1>Jquery</h1>
+                <h5>write less, do more.</h5>
+            </div>
+            <img class="pull-right" src="images/jquery.png"/>
+
+        </header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Trang chủ</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Giới thiệu</a>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Liên hệ</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>
+                                Tài khoản<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Đăng nhập</a></li>
+                                <li><a href="#">Quên mật khẩu</a></li>
+                                <li><a href="#">Đăng ký thành viên</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Đăng xuất</a></li>
+                                <li><a href="#">Đổi mật khẩu</a></li>
+                                <li><a href="#">Cập nhật hồ sơ</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Đơn hàng</a></li>
+                                <li><a href="#">Hàng đã mua</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Tiếng việt</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="row">
+        <aside class="col-sm-3">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form>
+                        <input placeholder="Keywords" class="form-control"/>
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Hàm Jquery</strong>
+                </div>
+                <div class="list-group">
+                    <a href="find.html" class="list-group-item">find()</a>
+                    <a href="hide.html" class="list-group-item">hide()</a>
+                    <a href="toggle.html" class="list-group-item">toggle()</a>
+                    <a href="show.html" class="list-group-item">show()</a>
+                    <a href="animate.html" class="list-group-item">animate()</a>
+                    <a href="fadeIn.html" class="list-group-item">fadeIn()</a>
+                    <a href="fadeOut.html" class="list-group-item">fadeOut()</a>
+                    <a href="slideUp.html" class="list-group-item">slideUp()</a>
+                    <a href="slideDown.html" class="list-group-item">slideDown()</a>
+                    <a href="html.html" class="list-group-item">html()</a>
+                    <a href="append.html" class="list-group-item">append()</a>
+                    <a href="prepend.html" class="list-group-item">prepend()</a>
+                    <a href="on.html" class="list-group-item">on()</a>
+                    <a href="off.html" class="list-group-item">off()</a>
+                    <a href="css.html" class="list-group-item">css()</a>
+                    <a href="attr.html" class="list-group-item">attr()</a>
+                    <a href="val.html" class="list-group-item">val()</a>
+                    <a href="text.html" class="list-group-item">text()</a>
+                    <a href="each.html" class="list-group-item">each()</a>
+                </div>
+            </div>
+        </aside>
+        <div class="section">
+            <div class="define">
+                <h3 class="mHead">Định nghĩa và sử dụng</h3>
+                <ul class="text">
+                    <li>.toggle(): Hiển thị và ẩn các thành phần phù hợp.</li>
+                    <li>Việc hiển thị và ẩn được luân phiên nhau giữa các lần action (VD action Click).</li>
+                </ul>
+            </div>
+            <div class="structure">
+                <h3 class="mHead">Cấu trúc</h3>
+                <ul class="text textList">
+                    <li>Đã được thêm vào từ phiên bản 1.0</li>
+                </ul>
+                <div class="sourceTxt">
+                    <p class="borderDash"><a href="#anchor01"><strong>.find(<span class="fontItalic">bộ chọn</span>)</strong></a></p>
+                    <pre>$('p')<span class="blue">.toggle(300)</span>;</pre>
+                    <pre>$('p')<span class="blue">.toggle(fast)</span>;</pre>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="panel panel-default">
+        <div class="panel-heading text-center">
+            <p>CodeGym &copy; 2019</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
